@@ -48,9 +48,10 @@ class Todo extends Component {
                 <div className={"centerDiv"}>
                     <table>
                         {
-                            this.state.list.map((item) => {
+                            this.state.list.map((item, index) => {
                                 return (
-                                    <tr key={item}>
+                                    <tr key={index}>
+                                        <td>{index + 1}</td>
                                         <td>{item}</td>
                                     </tr>
                                 )
