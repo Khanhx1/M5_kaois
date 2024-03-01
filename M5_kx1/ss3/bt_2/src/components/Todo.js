@@ -50,7 +50,7 @@ class Todo extends Component {
                         {
                             this.state.list.map((item) => {
                                 return (
-                                    <tr>
+                                    <tr key={item}>
                                         <td>{item}</td>
                                     </tr>
                                 )
