@@ -3,14 +3,12 @@ import * as bookService from '../service/bookService'
 import {Link} from "react-router-dom";
 
 
-
-
-export function BookList(){
+export function BookList() {
     const [books, setBooks] = useState([]);
     const [book, setBook] = useState({});
 
-    useEffect( () => {
-       getAllBooks();
+    useEffect(() => {
+        getAllBooks();
     }, []);
 
     const getAllBooks = async () => {
@@ -25,8 +23,9 @@ export function BookList(){
     return (
         <>
 
-
-            <Link to="/book/create">Add</Link>
+            <div className="d-flex justify-content-end">
+                <Link to="/book/create" className="btn btn-success my-3">Add a new book</Link>
+            </div>
             <table className="table">
                 <thead>
                 <tr>
