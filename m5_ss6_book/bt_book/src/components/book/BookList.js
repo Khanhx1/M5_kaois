@@ -1,15 +1,18 @@
 import {useEffect, useState} from "react";
 import * as bookService from '../service/bookService'
 import {Link} from "react-router-dom";
+import {BookRemove} from "./BookRemove";
 
 
 export function BookList() {
     const [books, setBooks] = useState([]);
     const [book, setBook] = useState({});
+    const [deletedBook, setDeletedBook] = useState();
+    const [show, setShow] = useState(false);
 
     useEffect(() => {
         getAllBooks();
-    }, []);
+    }, [show]);
 
     const getAllBooks = async () => {
         try {
@@ -20,9 +23,20 @@ export function BookList() {
         }
     }
 
+    const openModal = (book) => {
+        setDeletedBook(book);
+        setShow(true);
+    }
+
+    const closeModal = () => {
+        setShow(false);
+    }
+
     return (
         <>
-
+            <div className="d-flex justify-content-center">
+               <h2>Book list</h2>
+            </div>
             <div className="d-flex justify-content-end">
                 <Link to="/book/create" className="btn btn-success my-3">Add a new book</Link>
             </div>
@@ -40,13 +54,16 @@ export function BookList() {
                         <tr key={book.id}>
                             <td>{book.title}</td>
                             <td>{book.quantity}</td>
-                            <td>aa</td>
+                            <td><a href={`/book/detail/${book.id}`} className="btn btn-warning">Edit</a></td>
+                            <td>
+                                <button className="btn btn-danger" onClick={() => {openModal(book);}}>Remove</button>
+                            </td>
                         </tr>
                     ))
                 }
                 </tbody>
             </table>
-
+            <BookRemove deletedBook = {deletedBook} show = {show} closeModal = {closeModal} />
         </>
     )
 }

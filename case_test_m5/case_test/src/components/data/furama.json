@@ -1,0 +1,68 @@
+{
+  "service": [
+    {
+      "id": 1,
+      "nameService": "Villa",
+      "area": 15,
+      "cost": 2000000,
+      "capacity": 10,
+      "type": "day",
+      "standard": "vip",
+      "convenient": "qua",
+      "areaOfPool": 54,
+      "numberOfFloor": 3
+    },
+    {
+      "id": 2,
+      "nameService": "House",
+      "area": 20,
+      "cost": 6000000,
+      "capacity": 15,
+      "type": "year",
+      "standard": "vip",
+      "convenient": "quat",
+      "numberOfFloor": 3
+    },
+    {
+      "id": 3,
+      "nameService": "Room",
+      "area": 17,
+      "cost": 1000000,
+      "capacity": 7,
+      "type": "month",
+      "idAccompaniedService": 1
+    }
+  ],
+  "accompaniedService": [
+    {
+      "id": 1,
+      "nameAccom": "massage",
+      "unit": "ticket",
+      "price": 9000000
+    },
+    {
+      "id": 2,
+      "nameAccom": "Karaoke",
+      "unit": "hour",
+      "price": 95000000
+    },
+    {
+      "id": 3,
+      "nameAccom": "food",
+      "unit": "slot",
+      "price": 2000000
+    },
+    {
+      "id": 4,
+      "nameAccom": "water",
+      "unit": "bottle",
+      "price": 50000
+    },
+    {
+      "id": 5,
+      "nameAccom": "rental car",
+      "unit": "time",
+      "price": 550000
+    }
+  ]
+}

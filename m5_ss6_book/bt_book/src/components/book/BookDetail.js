@@ -1,31 +1,46 @@
-import {Field, Form, Formik} from "formik";
-import {useState} from "react";
-import {useNavigate} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
+import {useEffect, useState} from "react";
 import * as bookService from "../service/bookService"
+import {Field, Form, Formik} from "formik";
 import {toast} from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
-export function CreateBook() {
+import "react-toastify/dist/ReactToastify.css";
 
-
+export function BookDetail() {
+    console.log("lan dau")
+    const {bookId} = useParams();
     const [book, setBook] = useState();
-    const initalValue = {
-        title: "",
-        quantity: ""
-    }
     const navigation = useNavigate();
 
-    const handleSubmit = async (value) => {
-        await bookService.saveBook(value);
-        navigation("/book");
-        toast.success("successfully add");
+
+    useEffect(() => {
+        getBookById();
+    }, []);
+
+    const getBookById = async () => {
+        try {
+            console.log("vao method")
+            const bookById = await bookService.getBookById(bookId);
+            setBook(bookById);
+        } catch (err) {
+            console.log(err);
+        }
     }
 
-    return(
+    const handleSubmit = async (value) => {
+        await bookService.updateBook(value);
+        navigation("/book");
+        toast.success("successfully update");
 
+    }
+
+    if (!book) return <div>loader</div>
+
+    return (
         <div className="col-6">
-            <h2>create</h2>
+            <h2>Detail</h2>
+
             <Formik
-                initialValues={initalValue}
+                initialValues={book}
                 onSubmit={handleSubmit}>
                 <Form>
 
@@ -46,6 +61,8 @@ export function CreateBook() {
 
                 </Form>
             </Formik>
+
         </div>
+
     )
 }
