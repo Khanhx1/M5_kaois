@@ -13,12 +13,12 @@ export function CreateEmployee() {
 const validation = {
     name: Yup.string().matches(/^([A-Z]{1}[a-z]+)(\s([A-Z]{1}[a-z]+))+$/, "Tên không đúng định dạng").required("Vui lòng nhập tên"),
     dateOfBirth: Yup.date().min(new Date('1900-01-01'), "Ngày sinh phải trên 1900").max(new Date('2006/01/01'), "Phải đủ 18 tuổi").required("Vui lòng nhập ngày sinh"),
-    identification: Yup.string().required("Vui lòng nhập CCCD").matches(/^[0-9]{12}/, "CCCD phải đủ 12 số"),
+    identification: Yup.string().required("Vui lòng nhập CCCD").matches(/^[0-9]{12}$/, "CCCD phải đủ 12 số"),
     phoneNumber: Yup.string().required("Vui lòng nhập số điện thoại").matches(/^0[1-9]{9}$/,"Số điện thoại không hợp lệ"),
     email: Yup.string().required("vui lòng nhập email").email("Email không hợp lệ"),
     education: Yup.string().required("vui lòng nhập trình độ"),
     position: Yup.string().required("vui lòng nhập vị trí"),
-    salary: Yup.number().required("Vui lòng nhập lương")
+    salary: Yup.number().required("Vui lòng nhập lương").min(0, "Tiền lương phải lớn hơn 0")
 }
 
 

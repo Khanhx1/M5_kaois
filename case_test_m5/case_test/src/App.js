@@ -13,6 +13,9 @@ import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import {EditEmployee} from "./components/employee/EditEmployee";
 import {CreateEmployee} from "./components/employee/CreateEmployee";
+import {Customer} from "./components/customer/Customer";
+import {CustomerCreate} from "./components/customer/CustomerCreate";
+import {CustomerEdit} from "./components/customer/CustomerEdit";
 
 function App() {
     useEffect(() => {
@@ -70,6 +73,9 @@ function App() {
                     <Route path={"/employee"} element={<Employee/>}></Route>
                     <Route path={"/employee/edit/:id"} element={<EditEmployee/>}></Route>
                     <Route path="/employee/create" element={<CreateEmployee/>}></Route>
+                    <Route path="/customer" element={<Customer/>}></Route>
+                    <Route path="/customer/create" element={<CustomerCreate/>}></Route>
+                    <Route path={"/customer/edit/:id"} element={<CustomerEdit/>}></Route>
                 </Routes>
             </BrowserRouter>
             <Footer/>

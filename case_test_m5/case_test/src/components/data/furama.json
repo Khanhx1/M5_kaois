@@ -80,14 +80,82 @@
     },
     {
       "id": "ff7b",
-      "name": "La La",
+      "name": "La Lu",
       "dateOfBirth": "2001-12-12",
       "identification": "123456789789",
       "phoneNumber": "0123456789",
       "email": "Khanh@gg.com",
       "education": "Sau đại học",
       "position": "Giám đốc",
-      "salary": 14
+      "salary": 33
+    },
+    {
+      "id": "be74",
+      "name": "Khanh Xo",
+      "dateOfBirth": "2001-12-12",
+      "identification": "123456789789",
+      "phoneNumber": "0123456789",
+      "email": "Khanh@gg.com",
+      "education": "Cao đẳng",
+      "position": "Giám sát",
+      "salary": 34
+    }
+  ],
+  "customer": [
+    {
+      "id": "1",
+      "name": "Khanh Khanh",
+      "dateOfBirth": "2001-12-12",
+      "gender": "Nữ",
+      "identification": "012345678922",
+      "phoneNumber": "0236547896",
+      "email": "kahnh@ggm.com",
+      "level": "Member",
+      "address": "38 La la lo"
+    },
+    {
+      "id": "2",
+      "name": "Huy",
+      "dateOfBirth": "2001-12-12",
+      "gender": "Nam",
+      "identification": "012345678923",
+      "phoneNumber": "0236547896",
+      "email": "kahnh@ggm.com",
+      "level": "Diamond",
+      "address": "38 La"
+    },
+    {
+      "id": "e11b",
+      "name": "Khanh Ka",
+      "dateOfBirth": "2021-10-20",
+      "gender": "Nam",
+      "identification": "123456789786",
+      "phoneNumber": "0123456782",
+      "email": "kiet@kk.com",
+      "level": "Gold",
+      "address": "ươie"
+    },
+    {
+      "id": "a03a",
+      "name": "Dung Huynh",
+      "dateOfBirth": "2001-12-15",
+      "gender": "Nam",
+      "identification": "012345678922",
+      "phoneNumber": "0123456782",
+      "email": "Khanh@gg.com",
+      "level": "Platinium",
+      "address": "92 Hàm nghi"
+    },
+    {
+      "id": "13fa",
+      "name": "Nguyen Dat",
+      "dateOfBirth": "2000-10-22",
+      "gender": "Nam",
+      "identification": "012345678922",
+      "phoneNumber": "0123456789",
+      "email": "dat@gg.com",
+      "level": "Member",
+      "address": "23 Lê Duẩn"
     }
   ]
 }

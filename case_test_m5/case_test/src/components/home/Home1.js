@@ -106,8 +106,8 @@ export function Home1() {
                                                                 placeholder="Nhập email..."
                                                                 aria-label="Enter email address..."
                                                                 data-sb-validations="required,email"/></div>
-                                    <div className="col-auto">
-                                        <button className="btn btn-primary" id="submitButton"
+                                    <div className="row mt-3">
+                                        <button className="btn btn-outline-primary" id="submitButton"
                                                 type="button">Đăng ký
                                         </button>
                                     </div>
