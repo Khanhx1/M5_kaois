@@ -2,17 +2,21 @@ import {useEffect, useState} from "react";
 import * as FuramaRentalService from '../service/FuramaRentalService'
 import '../statics/css/KCustom.css'
 export function RentalService() {
-    const [services, setServices] = useState([]);
+    const [services, setServices] = useState();
 
-    useEffect(() => {
-        getAllService();
-    }, []);
+    // useEffect(() => {
+    //     getAllService();
+    // }, []);
+    //
+    // const getAllService = async () => {
+    //     const list = await FuramaRentalService.getAllService();
+    //     console.log(list)
+    //     setServices(list);
+    // }
 
-    const getAllService = async () => {
-        const list = await FuramaRentalService.getAllService();
-        console.log(list)
-        setServices(list);
-    }
+    if (!services) {return (
+        <div>loading...</div>
+    )}
 
     return (
         <>

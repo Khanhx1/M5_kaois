@@ -1,7 +1,7 @@
 {
   "service": [
     {
-      "id": 1,
+      "id": "1",
       "nameService": "Villa",
       "area": 15,
       "cost": 2000000,
@@ -13,7 +13,7 @@
       "numberOfFloor": 3
     },
     {
-      "id": 2,
+      "id": "2",
       "nameService": "House",
       "area": 20,
       "cost": 6000000,
@@ -24,7 +24,7 @@
       "numberOfFloor": 3
     },
     {
-      "id": 3,
+      "id": "3",
       "nameService": "Room",
       "area": 17,
       "cost": 1000000,
@@ -33,36 +33,61 @@
       "idAccompaniedService": 1
     }
   ],
-  "accompaniedService": [
+  "employee": [
     {
-      "id": 1,
-      "nameAccom": "massage",
-      "unit": "ticket",
-      "price": 9000000
+      "id": "1",
+      "name": "Khanhx11",
+      "dateOfBirth": "2020-10-21",
+      "identification": 2015641,
+      "phoneNumber": "07896523",
+      "email": "Huy@gg.com",
+      "education": "college",
+      "position": "GD",
+      "salary": 1002
     },
     {
-      "id": 2,
-      "nameAccom": "Karaoke",
-      "unit": "hour",
-      "price": 95000000
+      "id": "2",
+      "name": "Huy",
+      "dateOfBirth": "1020-10-10",
+      "identification": 2015641,
+      "phoneNumber": "07896523",
+      "email": "Huy@gg.com",
+      "education": "college",
+      "position": "hh",
+      "salary": 100
     },
     {
-      "id": 3,
-      "nameAccom": "food",
-      "unit": "slot",
-      "price": 2000000
+      "id": "",
+      "name": "Khanh Phuong",
+      "dateOfBirth": "2000-03-07",
+      "identification": "123456789789",
+      "phoneNumber": "0123333654",
+      "email": "kiet@kk.com",
+      "education": "ga",
+      "position": "GD",
+      "salary": 23
     },
     {
-      "id": 4,
-      "nameAccom": "water",
-      "unit": "bottle",
-      "price": 50000
+      "id": "8f99",
+      "name": "Khanh Mi",
+      "dateOfBirth": "1999-03-19",
+      "identification": "123456789789",
+      "phoneNumber": "0123456789",
+      "email": "kiet@kk.com",
+      "education": "Cao đẳng",
+      "position": "GD",
+      "salary": 23
     },
     {
-      "id": 5,
-      "nameAccom": "rental car",
-      "unit": "time",
-      "price": 550000
+      "id": "ff7b",
+      "name": "La La",
+      "dateOfBirth": "2001-12-12",
+      "identification": "123456789789",
+      "phoneNumber": "0123456789",
+      "email": "Khanh@gg.com",
+      "education": "Sau đại học",
+      "position": "Giám đốc",
+      "salary": 14
     }
   ]
 }

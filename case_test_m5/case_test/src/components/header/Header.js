@@ -12,7 +12,7 @@ export function Header() {
 
             <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
                 <div className="container px-4 px-lg-5">
-                    <a className="navbar-brand" href="#page-top">Furama resort</a>
+                    <a className="navbar-brand" href="/">Furama resort</a>
                     <button className="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -22,9 +22,9 @@ export function Header() {
                     <div className="collapse navbar-collapse" id="navbarResponsive">
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item"><a className="nav-link" href="/service">Dịch vụ</a></li>
-                            <li className="nav-item"><a className="nav-link" href="#projects">Khách hàng</a></li>
-                            <li className="nav-item"><a className="nav-link" href="#signup">Nhân viên</a></li>
-                            <li className="nav-item"><a className="nav-link" href="#signup">Hợp đồng</a></li>
+                            <li className="nav-item"><a className="nav-link" href="/customer">Khách hàng</a></li>
+                            <li className="nav-item"><a className="nav-link" href="/employee">Nhân viên</a></li>
+                            <li className="nav-item"><a className="nav-link" href="/contract">Hợp đồng</a></li>
                         </ul>
                     </div>
                 </div>

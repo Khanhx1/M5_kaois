@@ -1,0 +1,11 @@
+export function Customer() {
+
+
+    return (
+
+        <>
+
+
+        </>
+    )
+}
