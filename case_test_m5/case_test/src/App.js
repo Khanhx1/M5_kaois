@@ -16,6 +16,8 @@ import {CreateEmployee} from "./components/employee/CreateEmployee";
 import {Customer} from "./components/customer/Customer";
 import {CustomerCreate} from "./components/customer/CustomerCreate";
 import {CustomerEdit} from "./components/customer/CustomerEdit";
+import {Contract} from "./components/contract/Contract";
+import {ContractCreate} from "./components/contract/ContractCreate";
 
 function App() {
     useEffect(() => {
@@ -76,6 +78,8 @@ function App() {
                     <Route path="/customer" element={<Customer/>}></Route>
                     <Route path="/customer/create" element={<CustomerCreate/>}></Route>
                     <Route path={"/customer/edit/:id"} element={<CustomerEdit/>}></Route>
+                    <Route path="/contract" element={<Contract/>}></Route>
+                    <Route path="/contract/create" element={<ContractCreate/>}></Route>
                 </Routes>
             </BrowserRouter>
             <Footer/>

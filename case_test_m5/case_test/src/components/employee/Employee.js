@@ -21,6 +21,27 @@ export function Employee() {
         }
     }
 
+    function formatMoney(amount) {
+        // Chuyển số sang chuỗi và tách phần nguyên và phần thập phân
+        let parts = amount.toString().split(".");
+        let integerPart = parts[0];
+        let decimalPart = parts.length > 1 ? "." + parts[1] : "";
+
+        // Định dạng phần nguyên
+        let formattedInteger = "";
+        for (let i = integerPart.length - 1, j = 0; i >= 0; i--, j++) {
+            formattedInteger = integerPart.charAt(i) + formattedInteger;
+            if ((j + 1) % 3 === 0 && i !== 0) {
+                formattedInteger = "." + formattedInteger;
+            }
+        }
+
+        // Kết hợp phần nguyên và phần thập phân để tạo số tiền đầy đủ
+        let formattedAmount = formattedInteger + decimalPart;
+
+        return formattedAmount;
+    }
+
     const convertDate = (date) => {
          return moment(date).format('DD/MM/YYYY');
     }
@@ -55,14 +76,14 @@ export function Employee() {
                     <thead>
                     <tr>
                         <th scope="col">STT</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Date of birth</th>
-                        <th scope="col">Identification</th>
-                        <th scope="col">Phone</th>
+                        <th scope="col">Tên</th>
+                        <th scope="col">Ngày sinh</th>
+                        <th scope="col">CCCD</th>
+                        <th scope="col">Số điện thoại</th>
                         <th scope="col">Email</th>
-                        <th scope="col">Education</th>
-                        <th scope="col">Position</th>
-                        <th scope="col">Salary</th>
+                        <th scope="col">Trình độ</th>
+                        <th scope="col">Vị trí</th>
+                        <th scope="col">Lương (vnđ)</th>
                         <th>Chức năng</th>
                         <th></th>
                     </tr>
@@ -79,15 +100,13 @@ export function Employee() {
                                 <td>{employee.email}</td>
                                 <td>{employee.education}</td>
                                 <td>{employee.position}</td>
-                                <td>{employee.salary}</td>
+                                <td>{formatMoney(employee.salary)}</td>
                                 <td><a href={`/employee/edit/${employee.id}`} className="btn btn-warning">Sửa</a></td>
                                 <td><button className="btn btn-danger" onClick={() => {handleDelete(employee);}}>Xóa</button></td>
                             </tr>
                         ))
 
                     }
-
-
                     </tbody>
                 </table>
             </div>

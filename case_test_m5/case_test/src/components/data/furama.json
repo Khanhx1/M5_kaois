@@ -157,5 +157,70 @@
       "level": "Member",
       "address": "23 Lê Duẩn"
     }
+  ],
+  "contract": [
+    {
+      "id": "1",
+      "contractCode": "HĐ001",
+      "service": "Villa",
+      "beginDate": "2001-12-12",
+      "endDate": "2002-11-11",
+      "deposit": 200000,
+      "totalAmount": 500000
+    },
+    {
+      "id": "2",
+      "contractCode": "HĐ001",
+      "service": "Villa",
+      "beginDate": "2001-12-12",
+      "endDate": "2002-11-11",
+      "deposit": 200000,
+      "totalAmount": 500000
+    },
+    {
+      "id": "3",
+      "contractCode": "HĐ001",
+      "service": "Villa",
+      "beginDate": "2001-12-12",
+      "endDate": "2002-11-11",
+      "deposit": 200000,
+      "totalAmount": 500000
+    },
+    {
+      "id": "b29f",
+      "contractCode": "HD002",
+      "service": "House",
+      "beginDate": "2020-02-12",
+      "endDate": "2020-05-12",
+      "deposit": 50000,
+      "totalAmount": "1000000"
+    },
+    {
+      "id": "59de",
+      "contractCode": "HD003",
+      "service": "House",
+      "beginDate": "2022-10-10",
+      "endDate": "2023-10-10",
+      "deposit": 19999,
+      "totalAmount": 2000000
+    },
+    {
+      "id": "bc5f",
+      "contractCode": "HD007",
+      "service": "House",
+      "beginDate": "2000-12-12",
+      "endDate": "2003-12-15",
+      "deposit": 20000,
+      "totalAmount": 1000000
+    },
+    {
+      "id": "8428",
+      "contractCode": "HD004",
+      "service": "House",
+      "beginDate": "2005-10-10",
+      "endDate": "2022-12-22",
+      "deposit": 20000,
+      "totalAmount": 2000000
+    }
   ]
 }

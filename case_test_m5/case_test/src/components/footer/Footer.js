@@ -5,7 +5,7 @@ export function Footer() {
 
         <>
             <footer className="footer bg-black small text-center text-white-50">
-                <div className="container px-4 px-lg-5">Furaka &copy; 2024</div>
+                <div className="container px-4 px-lg-5">Furaka kk &copy; 2024</div>
             </footer>
         </>
     )

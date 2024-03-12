@@ -1,0 +1,72 @@
+{
+  "songs": [
+    {
+      "id": "1",
+      "name": "kaka",
+      "description": "lala",
+      "category": {
+        "id": "1",
+        "name": "pop"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Huhu",
+      "description": "lala",
+      "category": {
+        "id": "2",
+        "name": "dance"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Haha",
+      "description": "lala",
+      "category": {
+        "id": "1",
+        "name": "pop"
+      }
+    },
+    {
+      "id": "a7ef",
+      "name": "hahahaha",
+      "description": "poop",
+      "category": {
+        "id": "2",
+        "name": "dance"
+      }
+    },
+    {
+      "id": "c8d0",
+      "name": "huy",
+      "description": "w",
+      "category": {
+        "id": "3",
+        "name": "ballad"
+      }
+    },
+    {
+      "id": "0a3f",
+      "name": "khanhkhanh",
+      "description": "poop",
+      "category": {
+        "id": "3",
+        "name": "ballad"
+      }
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "name": "pop"
+    },
+    {
+      "id": "2",
+      "name": "dance"
+    },
+    {
+      "id": "3",
+      "name": "ballad"
+    }
+  ]
+}
